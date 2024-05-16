@@ -2,14 +2,22 @@
 
 
 <main class="affich-centre" id="main-page">
-<div class="gap-0 column-gap-3">
-    <h1>Nous contacter</h1>
-</div>
 
 
 
-<div class="d-flex justify-content-center gap-0 column-gap-3">
-    <div class="card col-lg-4 col-md-6 sol-sm-12" ><img src="/Assets/images/studi.png" alt=""></div>
+
+<div class="d-flex mt-5 mb-5 justify-content-center gap-0 column-gap-3">
+    
+
+    <div class="card  text-center col-lg-4 col-md-6 sol-sm-12 mt-5 mb-5" >
+
+    <div class="feature col">
+       
+        <h3>Nous contacter</h3>
+        
+        
+      </div>
+    </div>
     
         <div class="col-lg-2 col-md-6 sol-sm-12" >
 
@@ -34,14 +42,9 @@
             
         </form>
       </div>
-    </div>
-      <div class="d-flex  gap-0 column-gap-3">
 
-    <div class="p-2 g-col-6"><p>Votre message sera traité dans les plus bref délais
-  
-</p></div>
-    <div class="p-2 g-col-6">Grid item 4</div>
-      </div>
+    </div>
+      
 </main>
 
 <?php include_once dirname(__FILE__)."/templates/footer.php"  ?>

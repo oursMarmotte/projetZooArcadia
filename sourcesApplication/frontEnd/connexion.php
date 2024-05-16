@@ -24,8 +24,21 @@ if(isset($_GET['var']) && empty($_SESSION['user'])){
 </div>
 
 <div class="d-flex justify-content-center gap-0 column-gap-3">
-<div class="p-2 g-col-6">
-<img src="/Assets/images/studi.png" alt="">
+<div class="card  text-center col-lg-4 col-md-6 sol-sm-12 mt-5 mb-5" >
+
+<div class="feature col">
+   
+    <h3>Espace d'administration Zoo Arcadia</h3>
+    <br>
+    <br>
+    <p>identifiant et mot de passe de connexion requis</p>
+    <p>Pas de mot de passe rapprochez vous de votre administrateur</p>
+    <br>
+    <br>
+
+    
+    
+  </div>
 </div>
 
 

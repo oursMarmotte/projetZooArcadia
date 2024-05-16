@@ -75,10 +75,8 @@ $statement =$pdo->prepare('SELECT * FROM services WHERE service_id=:id' );
 
 <div class="container ms-20 me-20  text-center bg-white  ">
   
-    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-    <p>Ouvrir utilisateurs et services</p>
-  </button>
-  <div class="collapse" id="collapseExample">
+    
+  
   <div class="row">
   <div class="card col-6 mb-5" >
         <div class="card feature-icon d-inline-flex text-bg-primary bg-gradient fs-2 mb-3">
@@ -198,7 +196,7 @@ $statement =$pdo->prepare('SELECT * FROM services WHERE service_id=:id' );
       </div>
      
   </div>
-  </div>
+
   <div class="row">
   <div class="card col-6" >
         <div class="card feature-icon d-inline-flex text-bg-primary bg-gradient fs-2 mb-3">
@@ -304,8 +302,10 @@ $statement =$pdo->prepare('SELECT * FROM services WHERE service_id=:id' );
       </div>
     
   </div>
-
-  
+  <button class="btn btn-secondary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    <p>Ouvrir compte rendu vétérinaire</p>
+  </button>
+  <div class="collapse" id="collapseExample">
   <div class="row ">
     <div class="card col-6 mt-5">
     <div class="card feature-icon d-inline-flex text-bg-primary bg-gradient fs-2 mb-3">
@@ -343,5 +343,6 @@ $statement =$pdo->prepare('SELECT * FROM services WHERE service_id=:id' );
         </div>
         
     </div>
+  </div>
   </div>
   </div>

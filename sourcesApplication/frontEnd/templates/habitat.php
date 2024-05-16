@@ -24,7 +24,7 @@ $date = new DateTime();
 
 <div class="container px-4 py-5 mt-5 mb-5 bg-light d-flex " id="featured-3">
 
-<div class="card col">
+<div class="card col bg-secondary text-white">
 <h3><?= $habitat['habitat_nom'] ?></h3>
     <p><?= $habitat['habitat_description']?></p></div>
 
@@ -37,13 +37,15 @@ $date = new DateTime();
     
         
 
-    <div class="col d-flex justify-content-center">
-    <div class="col me-2 ms-2 pt-2 pb-2 ps-2 pe-2">
-</h3><?= $animal['animal_firstName'] ?>
+    <div class="col justify-content-center">
+    <div class="col d-flex justify-content-center me-2 ms-2 pt-2 pb-2 ps-2 pe-2">
+    <img src="/Assets/images/<?= $animal['image'] ?>" width="150" height="100">
     </div>
-    
-    
-             <img src="/Assets/images/<?= $animal['image'] ?>" width="150" height="100">
+    <div>
+    <?= $animal['animal_firstName'] ?>
+             
+    </div>
+
             </div>
             <?php foreach($tabRapport as $rapport): ?>
              <?php if($animal['Id_Animal'] == $rapport['Id_Animal']  ): ?>

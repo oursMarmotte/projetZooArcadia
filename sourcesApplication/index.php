@@ -1,6 +1,6 @@
 <?php include_once dirname(__FILE__)."/frontEnd/templates/header.php"  ?>
 
-?>
+
 
 <main class="affich-centre" id="main-page">
 
@@ -16,37 +16,55 @@
     
     <div class= "row g-4 py-5 row-cols-1 row-cols-lg-4 d-flex flex-wrap  justify-content-center  bg-light">
       <div class="feature col bg-white ms-2 me-2 ps-5 pe-5">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-          <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg>
-        </div>
+        
         <h3 class="fs-2 text-body-emphasis">Nos Services</h3>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-        <a href="#" class="icon-link">
-          Call to action
-          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-        </a>
+        <div class="card">
+        <img src="./Assets/images/train.jpg" alt="train du parc zoologique">
+        </div>
+        <div>
+        <ul>
+          <li>Visite du parc en train</li>
+          <li>Visite avec guide</li>
+          <li>Restaurants</li>
+          <li>Informations a la billeterie</li>
+
+        </ul>
+        </div>
+
       </div>
       <div class="feature col bg-white ms-2 me-2 ps-5 pe-5">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-          <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
-        </div>
+        
         <h3 class="fs-2 text-body-emphasis">Nos habitats</h3>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-        <a href="#" class="icon-link">
-          Call to action
-          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-        </a>
+        <div class="card">
+        <img src="/Assets/images/parczoologique.jpg" alt="parc a">
+        </div>
+
+        <div>
+        <ul>
+          <li>Large gamme d'habitats animalier</li>
+          <li>Environnement adapté de chacun de nos animaux</li>
+          <li>Visite vétérinaire quotidienne</li>
+          <li>Informations a la billeterie</li>
+
+        </ul>
+        </div>
+        
       </div>
       <div class="feature col bg-white ms-2 me-2 ps-5 pe-5">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
-        </div>
+        
         <h3 class="fs-2 text-body-emphasis">Nos animaux</h3>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-        <a href="#" class="icon-link">
-          Call to action
-          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-        </a>
+        <div class="card">
+        <img src="./Assets/images/rhino.jpg" alt="rhino"></div>
+        <div>
+        <ul>
+          <li>Large variété d'èspèce animale</li>
+          <li> Zebres et Chevaux en semi liberté </li>
+          <li>Visite vétérinaire quotidienne</li>
+          <li>Informations a la billeterie</li>
+
+        </ul>
+
+        </div>
       </div>
       <div class="card col-lg-4 col-md-4 sol-sm-12 ms-5 ps-5 pe-5 bg-white ">
         
