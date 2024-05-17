@@ -1,12 +1,12 @@
 <?php 
-include_once "/xampp/htdocs/zooArcadia/backEnd/lib/pdo.php";
-include_once "/xampp/htdocs/zooArcadia/backEnd/lib/listeServices.php";
-include_once "/xampp/htdocs/zooArcadia/backEnd/lib/user.php";
-include_once "/xampp/htdocs/zooArcadia/backEnd/lib/listeHabitats.php";
-include_once "/xampp/htdocs/zooArcadia/backEnd/lib/informations.php";
-include_once "/xampp/htdocs/zooArcadia/backEnd/lib/rapportVeterinaire.php";
-include_once "/xampp/htdocs/zooArcadia/backEnd/lib/routeurDashboard.php";
-include_once "/xampp/htdocs/zooArcadia/backEnd/lib/listeAnimaux.php";
+include_once "../backEnd/lib/pdo.php";
+include_once "../backEnd/lib/listeServices.php";
+include_once "../backEnd/lib/user.php";
+include_once "../backEnd/lib/listeHabitats.php";
+include_once "../backEnd/lib/informations.php";
+include_once "../backEnd/lib/rapportVeterinaire.php";
+include_once "../backEnd/lib/routeurDashboard.php";
+include_once "../backEnd/lib/listeAnimaux.php";
 
 ?>
 
@@ -121,7 +121,7 @@ $statement =$pdo->prepare('SELECT * FROM services WHERE service_id=:id' );
   <option value="3">Employé</option>
 </select>
           
-            <input type="submit" name="ajout-employé" value="connexion" class="btn btn-primary">
+            <input type="submit" name="ajout-employé" value="enregistrer" class="btn btn-primary">
             
         </form>
         </div>

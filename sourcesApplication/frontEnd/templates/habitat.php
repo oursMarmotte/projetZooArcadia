@@ -1,7 +1,7 @@
-<?php include_once "/xampp/htdocs/zooArcadia/backEnd/lib/pdo.php"?>
-<?php include_once "/xampp/htdocs/zooArcadia/backEnd/lib/listeAnimaux.php";
-include_once "/xampp/htdocs/zooArcadia/backEnd/lib/listeHabitats.php"; ?>
-<?php include_once "/xampp/htdocs/zooArcadia/backEnd/lib/rapportVeterinaire.php";  ?>
+<?php include_once "../backEnd/lib/pdo.php"?>
+<?php include_once "../backEnd/lib/listeAnimaux.php";
+include_once "../backEnd/lib/listeHabitats.php"; ?>
+<?php include_once "../backEnd/lib/rapportVeterinaire.php";  ?>
 
 <?php  
 
@@ -37,7 +37,7 @@ $date = new DateTime();
     
         
 
-    <div class="col justify-content-center">
+    <div class="col justify-content-center ">
     <div class="col d-flex justify-content-center me-2 ms-2 pt-2 pb-2 ps-2 pe-2">
     <img src="/Assets/images/<?= $animal['image'] ?>" width="150" height="100">
     </div>

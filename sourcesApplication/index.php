@@ -1,3 +1,4 @@
+<?php include_once dirname(__FILE__)."/backEnd/lib/session.php" ?>
 <?php include_once dirname(__FILE__)."/frontEnd/templates/header.php"  ?>
 
 
@@ -14,7 +15,7 @@
 
 <div class="container  d-flex flex-wrap  justify-content-center px-4 py-5 ps-5 pe-5 ms-10  id="featured-3">
     
-    <div class= "row g-4 py-5 row-cols-1 row-cols-lg-4 d-flex flex-wrap  justify-content-center  bg-light">
+    <div class= "row g-4 py-5 row-cols-1 row-cols-lg-4 d-flex flex-wrap  justify-content-center bg-light">
       <div class="feature col bg-white ms-2 me-2 ps-5 pe-5">
         
         <h3 class="fs-2 text-body-emphasis">Nos Services</h3>
@@ -73,29 +74,32 @@
         <li>avis n2</li>
         <li>avis n3</li>
       </ul>
-        <a href="#" class="icon-link">
-          Call to action
-          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-        </a>
+        
       </div>
-      <div class=" card col-lg-4 col-md-4 sol-sm-12 ms-5 pe-5" >
-      
+      <div class=" card d-flex col-lg-4 col-md-4 sol-sm-12 ms-5 pe-5 bg-secondary bg-gradient text-white" >
+      <br><br>
+<div class="col">
+        <form class="form1 text-center" id="form-accueil" action="mail.php" method="POST">
 
-        <form class="form1" id="form-accueil" action="mail.php" method="POST">
-
-        <div class="mb-3 ps-2 pe-2 pt-3 pb-3 me-5 ">
+        
         <label for="pseudo_name" class="form-label">Votre pseudo</label>
-        <input type="text"id="pseudo-name" name="name" placeholder="Full-name">
-        </div>
+        <input type="text"id="pseudo-name" name="name" placeholder="Full-name"class="form-control">
+        
         <br>
-        <div class="mb-3 ps-2 pe-2 me-5">
+        
         <label for="mail_message" class="form-label">Votre message</label>
-        <textarea name="message" id="mail-message" placeholder="text_message"></textarea>
-        </div>
+        <textarea name="message" id="mail-message" placeholder="text_message" class="form-control"></textarea>
+
+        
         <button type="submit" id="mail-submit"name="submit" class="btn btn-primary">envoyez</button>
-        <p class="form-message"></p>
-    </form>
-      
+        </form>  
+        
+        
+
+</div>
+
+    
+<p class="form-message"></p>
       
  
       
@@ -107,6 +111,6 @@
   
 </div>
 
-</main
+</main>
 
 <?php include_once dirname(__DIR__)."/zooArcadia/frontEnd/templates/footer.php";?>

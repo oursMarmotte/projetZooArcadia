@@ -1,3 +1,4 @@
+<?php include_once dirname(__DIR__)."/backEnd/lib/session.php" ?>
 <?php include_once dirname(__FILE__)."/templates/header.php"  ?>
 
 

@@ -1,4 +1,4 @@
-<?php require_once "/xampp/htdocs/zooArcadia/backEnd/lib/session.php" ?>
+<?php /* require_once "/xampp/htdocs/zooArcadia/backEnd/lib/session.php" */?>
 
 <!DOCTYPE html>
 <html lang="en">

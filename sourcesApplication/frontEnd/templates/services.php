@@ -1,5 +1,5 @@
-<?php include_once "/xampp/htdocs/zooArcadia/backEnd/lib/pdo.php"?>
-<?php include_once "/xampp/htdocs/zooArcadia/backEnd/lib/listeServices.php"?>
+<?php include_once "../backEnd/lib/pdo.php"?>
+<?php include_once "../backEnd/lib/listeServices.php"?>
 
 <?php 
 $pdo;

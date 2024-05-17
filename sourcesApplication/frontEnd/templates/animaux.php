@@ -1,12 +1,16 @@
-<?php include_once "/xampp/htdocs/zooArcadia/backEnd/lib/pdo.php"?>
-<?php include_once "/xampp/htdocs/zooArcadia/backEnd/lib/listeAnimaux.php"?>
+<?php include_once "../backEnd/lib/pdo.php"?>
+<?php include_once "../backEnd/lib/listeAnimaux.php"?>
+
+
+
+
 
 <h3 class="text-center text-white">Tous nos animaux classés par espèce et catégorie</h3>
 
 <?php  $category = getCategorieAnimal($pdo)?>
 
 <div class="container px-4 py-5 d-flex "  id="featured-4">
-<div class="card mb-3  me-5 bg-secondary text-white" style="width: 18rem;height:18rem">
+<div class="card mb-3  me-5 bg-light " style="width: 18rem;height:18rem">
   <div class="card-body">
     <h5 class="card-title">Choisisez vos animaux</h5>
 
