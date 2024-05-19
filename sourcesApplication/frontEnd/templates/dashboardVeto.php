@@ -40,18 +40,18 @@ $success =1;
         <form action="/backEnd/lib/routeurDashboard.php" method="post">
         
                 <label for="rapport_Detail" class="form-label">Détail du rapport</label>
-                <input type="textarea" name="rapport_Detail" id="rapport_Detail" class="form-control">
+                <input type="textarea" name="rapport_Detail" id="rapport_Detail" class="form-control" required>
             
             
             <label for="etat_de_santé_animal" class="form-label">Etat de santé</label>
-                <input type="textarea" name="etat_de_santé_animal" id="etat_de_santé_animal" class="form-control">
+                <input type="textarea" name="etat_de_santé_animal" id="etat_de_santé_animal" class="form-control" required>
     
       
             
 
               
-          <select class="form-select" name="nouriture_label">
-  <option selected name="	nouriture_label">Type d'alimentation</option>
+          <select class="form-select" name="nouriture_label" required>
+  <option value="" name="	nouriture_label">Type d'alimentation</option>
   <option value="Viande">Viande</option>
   <option value="Poisson">Poisson</option>
   <option value="Banane">Banane</option>
@@ -65,8 +65,8 @@ $success =1;
               <input type="text" name="quantité	" id="quantité" class="form-control">
         
           
-          <select class="form-select " name="Id_Animal">
-          <option selected name="Id_Animal ">Nom animal</option>
+          <select class="form-select " name="Id_Animal" required>
+          <option value="" name="Id_Animal ">Nom animal</option>
           <?php foreach($tabAnimals as $animal):?>
        <option value=<?= $animal['Id_Animal']?>><?= $animal['animal_firstName'] ?></option> 
 
@@ -74,8 +74,8 @@ $success =1;
           </select>
           
           
-          <select class="form-select" name="Id_Employé">
-          <option selected name="Id_Employé">Nom employé</option>
+          <select class="form-select" name="Id_Employé" required>
+          <option value="" name="Id_Employé">Nom employé</option>
           <?php foreach($tabEmployés as $employé): ?>
             <option value=<?=$employé['employé_id'] ?>><?= $employé['username'] ?></option>
 

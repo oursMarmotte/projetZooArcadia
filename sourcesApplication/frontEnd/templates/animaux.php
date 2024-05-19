@@ -1,5 +1,3 @@
-<?php include_once "../backEnd/lib/pdo.php"?>
-<?php include_once "../backEnd/lib/listeAnimaux.php"?>
 
 
 

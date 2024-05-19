@@ -103,22 +103,22 @@ $statement =$pdo->prepare('SELECT * FROM services WHERE service_id=:id' );
         <form action="/backEnd/lib/routeurDashboard.php" method="post">
         <div class="mb-3">
                 <label for="username" class="form-label">nom de l'employé</label>
-                <input type="text" name="username" id="username" class="form-control">
+                <input type="text" name="username" id="username" class="form-control" required>
             </div>
             <div class="mb-3>
                 <label for="email" class="form-label">Email</label>
-                <input type="email" name="email" id="email" class="form-control">
+                <input type="email" name="email" id="email" class="form-control" required>
             </div>
       
             <div class="mb-4">
               <label for="password" class="form-label">mot de passe</label>
-              <input type="text" name="password" id="password" class="form-control">
+              <input type="text" name="password" id="password" class="form-control" required>
           </div>
-          <select class="form-select" name="id_Role">
-  <option selected name="id_Role">Role</option>
+          <select class="form-select" name="id_Role" required>
+  <option value =""selected name="id_Role" >Role</option>
   <option value="1">Administrateur</option>
   <option value="2">Véterinaire </option>
-  <option value="3">Employé</option>
+  <option value="3" >Employé</option>
 </select>
           
             <input type="submit" name="ajout-employé" value="enregistrer" class="btn btn-primary">
@@ -148,11 +148,11 @@ $statement =$pdo->prepare('SELECT * FROM services WHERE service_id=:id' );
         <form action="/backEnd/lib/routeurDashboard.php" method="post">
         <div class="mb-3">
                 <label for="username" class="form-label">Nom du service</label>
-                <input type="text" name="service_nom" id="service_nom" class="form-control">
+                <input type="text" name="service_nom" id="service_nom" class="form-control" required>
             </div>
             <div class="mb-3>
                 <label for="service_description" class="form-label">Description du service</label>
-                <input type="textarea" name="service_description" id="service_description" class="form-control">
+                <input type="textarea" name="service_description" id="service_description" class="form-control"required>
             </div>
       
             <div class="mb-4">
@@ -218,16 +218,16 @@ $statement =$pdo->prepare('SELECT * FROM services WHERE service_id=:id' );
         <form action="/backEnd/lib/routeurDashboard.php" method="post">
         <div class="mb-3">
                 <label for="animal_firstName" class="form-label">nom de l'animal</label>
-                <input type="text" name="animal_firstName"id="animal_firstName" class="form-control">
+                <input type="text" name="animal_firstName"id="animal_firstName" class="form-control" required>
             </div>
             <div class="mb-3>
                 <label for="email" class="form-label">image de l'animal</label>
-                <input type="text" name="image" id="image" class="form-control">
+                <input type="text" name="image" id="image" class="form-control" required>
             </div>
       
            
-          <select class="form-select" name="id_Habitat">
-  <option selected name="id_Habitat">Habitat</option>
+          <select class="form-select" name="id_Habitat" required>
+  <option value="" selected name="id_Habitat">Habitat</option>
   <option value="1">Habitat Felins</option>
   <option value="2">Habitat reptile </option>
   <option value="3">Habitat caniné</option>
@@ -237,8 +237,8 @@ $statement =$pdo->prepare('SELECT * FROM services WHERE service_id=:id' );
   <option value="14">Habitat grand singe</option>
   <option value="13">Habitat petit singe</option>
 </select>
-<select class="form-select" name="Id_Race">
-  <option selected name="Id_Race ">Espece/Race</option>
+<select class="form-select" name="Id_Race" required>
+  <option value="" selected name="Id_Race ">Espece/Race</option>
   <option value="1">Lion</option>
   <option value="2">Ours</option>
   <option value="4">Zebre</option>
@@ -281,16 +281,16 @@ $statement =$pdo->prepare('SELECT * FROM services WHERE service_id=:id' );
         <form action="/backEnd/lib/routeurDashboard.php" method="post">
         <div class="mb-3">
                 <label for="habitat_nom" class="form-label">Nom de l'habitat</label>
-                <input type="text" name="habitat_nom" id="habitat_nom" class="form-control">
+                <input type="text" name="habitat_nom" id="habitat_nom" class="form-control" required>
             </div>
             <div class="mb-3>
                 <label for="habitat_commentaire" class="form-label">Commentaire</label>
-                <input type="text" name="habitat_commentaire" id="habitat_commentaire" class="form-control">
+                <input type="text" name="habitat_commentaire" id="habitat_commentaire" class="form-control" required>
             </div>
       
             <div class="mb-4">
               <label for="habitat_description" class="form-label">Description</label>
-              <input type="text" name="habitat_description" id="habitat_description" class="form-control">
+              <input type="text" name="habitat_description" id="habitat_description" class="form-control" required>
           </div>
           
           

@@ -77,8 +77,8 @@ $success = 1;
             
 
               
-          <select class="form-select" name="nouriture_label">
-  <option selected name="	nouriture_label">Type d'alimentation</option>
+          <select class="form-select" name="nouriture_label" required>
+  <option value="" name="	nouriture_label">Type d'alimentation</option>
   <option value="Viande">Viande</option>
   <option value="Poisson">Poisson</option>
   <option value="Banane">Banane</option>
@@ -89,11 +89,11 @@ $success = 1;
 
 
               <label for="quantité" class="form-label">Quantité</label>
-              <input type="text" name="quantité	" id="quantité" class="form-control">
+              <input type="text" name="quantité	" id="quantité" class="form-control" required>
         
           
-          <select class="form-select " name="Id_Animal">
-          <option selected name="Id_Animal ">Nom animal</option>
+          <select class="form-select " name="Id_Animal" required>
+          <option value="" name="Id_Animal ">Nom animal</option>
           <?php foreach($tabAnimals as $animal):?>
        <option value="<?= $animal['Id_Animal']?>"><?= $animal['animal_firstName'] ?></option> 
 
@@ -101,8 +101,8 @@ $success = 1;
           </select>
           
           
-          <select class="form-select" name="Id_Employé">
-          <option selected name="Id_Employé">Nom employé</option>
+          <select class="form-select" name="Id_Employé" required>
+          <option value="" name="Id_Employé">Nom employé</option>
           <?php foreach($tabEmployés as $employé): ?>
             <option value="<?=$employé['employé_id'] ?>"><?= $employé['username'] ?></option>
 

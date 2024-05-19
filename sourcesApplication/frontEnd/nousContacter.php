@@ -28,11 +28,11 @@
         <form action="" method="post">
             <div class="mb-2>
                 <label for="email" class="form-label">Votre adresse mail</label>
-                <input type="email" name="email" id="email" class="form-control">
+                <input type="email" name="email" id="email" class="form-control" required>
             </div>
             <div class="mb-2">
                 <label for="visiteur_nom" class="form-label">Votre nom</label>
-                <input type="text" name="nom" id=visiteur_nom" class="form-control">
+                <input type="text" name="nom" id=visiteur_nom" class="form-control" required>
             </div>
             <div class="mb-2">
               <label for="visiteur_prenom" class="form-label">Votre nom</label>
@@ -40,7 +40,7 @@
           </div>
           <div class="mb-3">
             <label for="visiteur_message" class="form-label">Votre message</label>
-            <textarea name="message" id="visiteur_message" cols="30" rows="3" class="form-control"></textarea>
+            <textarea name="message" id="visiteur_message" cols="30" rows="3" class="form-control" required></textarea>
         </div>
             <input type="submit" name="loginUser" value="connexion" class="btn btn-primary">
            

@@ -1,7 +1,3 @@
-<?php include_once "../backEnd/lib/pdo.php"?>
-<?php include_once "../backEnd/lib/listeAnimaux.php";
-include_once "../backEnd/lib/listeHabitats.php"; ?>
-<?php include_once "../backEnd/lib/rapportVeterinaire.php";  ?>
 
 <?php  
 
@@ -24,9 +20,11 @@ $date = new DateTime();
 
 <div class="container px-4 py-5 mt-5 mb-5 bg-light d-flex " id="featured-3">
 
-<div class="card col bg-secondary text-white">
+<div class=" col bg-secondary ">
+    <div class="card bg-white mt-3">
 <h3><?= $habitat['habitat_nom'] ?></h3>
     <p><?= $habitat['habitat_description']?></p></div>
+</div>
 
     <?php foreach($animalByHabitat as $animal): ?>
 <?php if($animal['Id_Habitat'] == $habitat['habitat_id']): ?>

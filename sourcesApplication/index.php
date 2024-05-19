@@ -1,6 +1,23 @@
 <?php include_once dirname(__FILE__)."/backEnd/lib/session.php" ?>
 <?php include_once dirname(__FILE__)."/frontEnd/templates/header.php"  ?>
 
+<?php 
+$message = [];
+if(isset($_GET['info'])){
+  if($_GET['info'] == 1){
+    $message[] = "<p class='text-danger'>Veuillez indiquer votre pseudo</p><br>";
+  
+  }elseif($_GET['info'] == 2){
+    $message[] = "<p class='text-danger'>Veuillez rediger message</p><br>";
+
+  }elseif($_GET['info']==3){
+$message[] = "<p class='text-success' >votre message à été envoyé</p></span><br>";
+  }
+  
+
+}
+
+?>
 
 
 <main class="affich-centre" id="main-page">
@@ -67,6 +84,7 @@
 
         </div>
       </div>
+     
       <div class="card col-lg-4 col-md-4 sol-sm-12 ms-5 ps-5 pe-5 bg-white ">
         
         <h3 class="fs-2 text-body-emphasis">Votre avis nous interessent</h3>
@@ -79,16 +97,24 @@
       <div class=" card d-flex col-lg-4 col-md-4 sol-sm-12 ms-5 pe-5 bg-secondary bg-gradient text-white" >
       <br><br>
 <div class="col">
+<div class=" card bg-light">
+<?php foreach($message as $information): ?>
+
+<?= $information ?>
+
+<?php endforeach ?>
+
+</div>
         <form class="form1 text-center" id="form-accueil" action="mail.php" method="POST">
 
         
         <label for="pseudo_name" class="form-label">Votre pseudo</label>
-        <input type="text"id="pseudo-name" name="name" placeholder="Full-name"class="form-control">
+        <input type="text"id="pseudo-name" name="name" placeholder="Full-name"class="form-control" required>
         
         <br>
         
         <label for="mail_message" class="form-label">Votre message</label>
-        <textarea name="message" id="mail-message" placeholder="text_message" class="form-control"></textarea>
+        <textarea name="message" id="mail-message" placeholder="text_message" class="form-control" required></textarea>
 
         
         <button type="submit" id="mail-submit"name="submit" class="btn btn-primary">envoyez</button>
@@ -99,7 +125,7 @@
 </div>
 
     
-<p class="form-message"></p>
+
       
  
       
