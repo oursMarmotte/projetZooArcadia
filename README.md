@@ -59,7 +59,9 @@ Pour l'importer
 
 Ouvrir l'inerface phpMyAdmin 
 clicquer sur l'onglet importer 
-sélectionner Choisir un fichier
+sélectionner Choisir le fichier
+bdd_zooarcadia.sql
+clicquer sur inporter
 
 
 
