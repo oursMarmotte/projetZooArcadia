@@ -1,3 +1,4 @@
+
 # projetZooArcadia
 
 ce repositorie contient :
@@ -10,13 +11,37 @@ ce repositorie contient :
 
 #Déploiement
 
-Le déploiement en local nécessite au préalable l'installation de Xampp
+Le déploiement en local nécessite au préalable l'installation de Xampp V 3.3.0
 sur l'ordinateur ( window,linux).
 le repertoire htdocs a été choisis pour hébergé le projet zooarcadia
-mais il est nécessaire de renseigner le fichier de configuration httpd.conf
-avec les informations suivantes:
+
+
+En local le site est indexé sous lenom de domaine zooarcadia.local nécéssitant le
+renseignement des directives suivantes dans httpd.conf
+
+-Listen 80
+-ServerName localhost:80
+<Directory />
+    AllowOverride none
+    Require all denied
+</Directory>
+Souvent ces directives sont renseigné par défaut .
+
 DocumentRoot "C:/xampp/htdocs"
 <Directory "C:/xampp/htdocs">
+
+et les directives virtualhost sont à renseignés aussi
+dans httpd-vhosts.conf
+C:\XAMPP\apache\conf\extra\httpd-vhosts.conf 
+avec les directives suivantes:
+
+<VirtualHost *:80>
+DocumentRoot "C:\xampp\htdocs\zooArcadia"
+ServerName zooArcadia.local
+</VirtualHost>
+
+
+
 
 
 
