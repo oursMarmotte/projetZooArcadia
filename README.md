@@ -17,7 +17,7 @@ le repertoire htdocs a été choisis pour hébergé le projet zooarcadia
 
 
 En local le site est indexé sous lenom de domaine zooarcadia.local nécéssitant le
-renseignement des directives suivantes dans httpd.conf
+renseignement des directives suivantes dans le fichier de configuration du serveur, httpd.conf
 
 -Listen 80
 -ServerName localhost:80
@@ -30,7 +30,7 @@ Souvent ces directives sont renseigné par défaut .
 DocumentRoot "C:/xampp/htdocs"
 <Directory "C:/xampp/htdocs">
 
-et les directives virtualhost sont à renseigner aussi
+Et les directives virtualhost sont à renseigner aussi
 dans httpd-vhosts.conf
 C:\XAMPP\apache\conf\extra\httpd-vhosts.conf 
 avec les directives suivantes:
@@ -52,10 +52,10 @@ Redémarrez le serveur Apache
 
 Xampp integre un Systeme de base de donnée relationnel  MYSQL phpMyAdmin
 dans laquelle la base de donné bdd_zooarcadia à été construite 
-cette base de donné comporte 12 tables nécessaire au bon fonctionnement
-de l'application ,une copie est jointe dans ce répositorie dans le répertoire
+cette base de donné relationnel comporte 12 tables nécessaire au bon fonctionnement
+de l'application ,une copie est jointe dans ce répositorie sous le répertoire
 fichierCréationBdd .
-Pour l'importer 
+Pour l'importer dans mysql
 
 Ouvrir l'inerface phpMyAdmin 
 clicquer sur l'onglet importer 
