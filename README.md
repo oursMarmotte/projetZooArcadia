@@ -41,12 +41,25 @@ ServerName zooArcadia.local
 </VirtualHost>
 
 
-Pour finir il faut également éditer lefichier host
+Pour finir il faut également éditer le fichier host
 dans windows 
 C:\windows\system32\drivers\etc
 et y ajouter les informations suivantes:
 127.0.0.1 zooArcadia.local
+Redémarrez le serveur Apache
 
+#Base de donné
+
+Xampp integre un Systeme de base de donnée relationnel  MYSQL phpMyAdmin
+dans laquelle la base de donné bdd_zooarcadia à été construite 
+cette base de donné comporte 12 tables nécessaire au bon fonctionnement
+de l'application ,une copie est jointe dans ce répositorie dans le répertoire
+fichierCréationBdd .
+Pour l'importer 
+
+Ouvrir l'inerface phpMyAdmin 
+clicquer sur l'onglet importer 
+sélectionner Choisir un fichier
 
 
 
