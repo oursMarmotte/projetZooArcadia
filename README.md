@@ -30,7 +30,7 @@ Souvent ces directives sont renseigné par défaut .
 DocumentRoot "C:/xampp/htdocs"
 <Directory "C:/xampp/htdocs">
 
-et les directives virtualhost sont à renseignés aussi
+et les directives virtualhost sont à renseigner aussi
 dans httpd-vhosts.conf
 C:\XAMPP\apache\conf\extra\httpd-vhosts.conf 
 avec les directives suivantes:
@@ -39,6 +39,13 @@ avec les directives suivantes:
 DocumentRoot "C:\xampp\htdocs\zooArcadia"
 ServerName zooArcadia.local
 </VirtualHost>
+
+
+Pour finir il faut également éditer lefichier host
+dans windows 
+C:\windows\system32\drivers\etc
+et y ajouter les informations suivantes:
+127.0.0.1 zooArcadia.local
 
 
 
