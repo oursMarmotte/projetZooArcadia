@@ -91,3 +91,10 @@ Ouvrir l'inerface phpMyAdmin clicquer sur l'onglet importer sélectionner Choisi
 
 
 
+#Déploiement chez hebergeur alwaysdata
+
+cet opération à nécessité l'instalation du client filezilla sur mon ordinateur et l'ouverture d'un compte sur alwaysdata.net
+les fichiers source et la base de donné ont été migré sous le répertoire /home/centserv/www
+le site et son contenu sont accesible àl'adresse url suivante 
+
+https://centserv.alwaysdata.net/
