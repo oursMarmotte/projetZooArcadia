@@ -1,5 +1,5 @@
-<?php include_once "../zooArcadia/backEnd/lib/pdo.php";?>
-<?php include_once "../zooArcadia/backEnd/lib/informations.php";?>
+<?php include_once "../backEnd/lib/pdo.php";?>
+<?php include_once "../backEnd/lib/informations.php";?>
 
 <?php $tabInfo = getInformations($pdo);?>
 

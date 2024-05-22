@@ -68,4 +68,4 @@ if(isset($_GET['var']) && empty($_SESSION['user'])){
 </div>
 </div>
 </main>
-<?php include_once dirname(__FILE__)."/templates/footer2.php"  ?>
+<?php include_once dirname(__FILE__)."/templates/footer.php"  ?>

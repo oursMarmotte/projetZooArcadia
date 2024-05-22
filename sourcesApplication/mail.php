@@ -10,9 +10,13 @@ include_once dirname(__FILE__)."/backEnd/lib/avisVisiteur.php";
 
 if(isset($_POST['submit'])){
 
-$name= $_POST['name'];
+    $nameA =$_POST['name'];
+    $messageA= $_POST['message'];
 
-$message= $_POST['message'];
+//sécurité filtrage des input visiteur
+$name=  $sanitized_input = htmlspecialchars($nameA, ENT_QUOTES | ENT_HTML5, 'UTF-8');
+
+$message=  $sanitized_input = htmlspecialchars($messageA, ENT_QUOTES | ENT_HTML5, 'UTF-8');
 $errorEmpty = false;
 
 if(empty($name) ){

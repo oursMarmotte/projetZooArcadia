@@ -224,8 +224,8 @@ $result = $statement->execute();
               $empID =  $_POST['Id_Employé'];
 
        
-                 $statement = $pdo->prepare("INSERT INTO `rapport_veterinaire` (`rapport_id`, `rapport_Detail`, `etat_de_santé_animal`, `Id_Animal`, `Id_Employé`, `nouriture_label`, `quantité`) 
-                 VALUES (NULL, '.$detail.', '.$santé. ', '.$aniID.', '.$empID.', NULL, NULL)");
+                 $statement = $pdo->prepare("INSERT INTO `rapport_veterinaire` (`rapport_id`, `rapport_Date` ,`rapport_Detail`, `etat_de_santé_animal`, `Id_Animal`, `Id_Employé`, `nouriture_label`, `quantité`) 
+                 VALUES (NULL,' ','.$detail.', '.$santé. ', '.$aniID.', '.$empID.', NULL, NULL)");
                   
                   
                   if($statement->execute()){
@@ -251,7 +251,7 @@ function recordAlimentationAnimal($pdo){
 
 
         $statement = $pdo->prepare("INSERT INTO `rapport_veterinaire` (`rapport_id`, `rapport_Date`, `rapport_Detail`, `etat_de_santé_animal`, `Id_Animal`, `Id_Employé`, `nouriture_label`, `quantité`) VALUES 
-        (NULL, NULL, NULL, NULL, '.$aniID.','.$empID.','.$alimentation.','.$quantité.')");
+        (NULL,'', NULL, NULL, '.$aniID.','.$empID.','.$alimentation.','.$quantité.')");
          
          
          if($statement->execute()){
@@ -322,9 +322,7 @@ if(isset($_POST['ajout-habitat'])){
 if(isset($_POST['ajout-rapport'])){
 
     echo "ajout rapport veterinaire";
-   var_dump($_POST['Id_Animal']);
-   
-        var_dump(  $_POST['Id_Employé']);
+
 
         recordRapportVeto($pdo);
     

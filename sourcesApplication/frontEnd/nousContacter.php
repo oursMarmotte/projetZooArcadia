@@ -7,10 +7,10 @@
 
 
 
-<div class="d-flex mt-5 mb-5 justify-content-center gap-0 column-gap-3">
-    
+<div class="container d-flex justify-content-center  align-items-center ms-20 me-20 text-center " >
+    <div class="row ">
 
-    <div class="card  text-center col-lg-4 col-md-6 sol-sm-12 mt-5 mb-5" >
+    <div class="card col-6 mb-5 " >
 
     <div class="feature col pt-5 pb-5 ps-5 pe-5 ">
        
@@ -22,8 +22,8 @@
         
       </div>
     </div>
-    <div class="card text-white  bg-secondary bg-gradient col-lg-4 col-md-6 sol-sm-12 mt-5 mb-5" >
-        <div class="feature col pt-5 pb-5 ps-5 pe-5" >
+    <div class=" card col-6 mb-5 text-white  bg-secondary bg-gradient " >
+    
 
         <form action="" method="post">
             <div class="mb-2>
@@ -45,10 +45,10 @@
             <input type="submit" name="loginUser" value="connexion" class="btn btn-primary">
            
         </form>
-      </div>
+      
     </div>
     </div>
       
 </main>
 
-<?php include_once dirname(__FILE__)."/templates/footer.php"  ?>
+<?php include_once dirname(__FILE__)."/templates/footer2.php"  ?>

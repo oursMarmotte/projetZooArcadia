@@ -20,4 +20,4 @@
 
 </main>
 
-<?php include_once dirname(__FILE__)."/templates/footer.php"  ?>
+<?php include_once dirname(__FILE__)."/templates/footer2.php"  ?>

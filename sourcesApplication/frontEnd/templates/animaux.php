@@ -8,7 +8,7 @@
 <?php  $category = getCategorieAnimal($pdo)?>
 
 <div class="container px-4 py-5 d-flex "  id="featured-4">
-<div class="card mb-3  me-5 bg-light " style="width: 18rem;height:18rem">
+<div class="card mb-3  me-5 bg-light   d-sm-none d-md-block d-none d-sm-block" style="width: 18rem;height:18rem">
   <div class="card-body">
     <h5 class="card-title">Choisisez vos animaux</h5>
 
